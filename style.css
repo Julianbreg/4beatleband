@@ -17,33 +17,6 @@ a {
     display: inline;
     color:white;
 }
-header {
-    width: 100%;
-    height: 40px;
-    display: grid;
-    justify-content: flex-end;
-    grid-template-rows: 1fr 1fr;
-    background-color: #151616;
-}
-header .header-icons-container {
-    width: 100%;
-    height: 50px;
-    display: grid;
-    background-color: #151616;
-}
-header .header-icons-container .icons {
-    width: 250px;
-    height: auto;
-    display: flex;
-    justify-items: flex-end;
-    align-items: center;
-    justify-content: space-between;
-    justify-self: end;
-    margin-right:50px;
-}
-header .icons span {
-    color: rgb(233, 227, 227);
-}
 
 
 main{
@@ -58,7 +31,7 @@ main .main-logo-box {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     background-color: #151616;
 }
 
@@ -66,7 +39,9 @@ main .main-logo-box {
 .box1,
 .box2,
 .box3,
-.box4 {
+.box4
+
+{
     
     font-size: 1.2rem;
     margin: 10px;
@@ -75,6 +50,7 @@ main .main-logo-box {
     max-width: 67px;
     max-height: 65px;
     border-radius: 65px;
+    text-align: center;
     background-image: url('./fotos/beatles.jpg');
     background-size: cover;
     background-position: bottom;
@@ -92,8 +68,17 @@ main .main-logo-box {
     box-shadow: 3px 3px 3px #505a15;
 }
 
+.box1 a,
+.box2 a,
+.box3 a,
+.box4 a{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    color: #747c44 ;
+}
    
-.container {
+.container { /*Contenedor de fotos skroll*/
     width: 100%;
     height: 80%;
     background: #2f3131;
@@ -108,7 +93,7 @@ main .main-logo-box {
 }
 
 
-.container .item {
+.container .item { /*Imágenes del contenedor*/
 
     flex: 0 0 60%;
     display: contents;
@@ -124,23 +109,143 @@ main .main-logo-box {
 }
 
 
-.calendario {
-    background-color: #223333;
-    margin: 2px;
+
+.calendario { /*Contenedor título Calendario*/
+    background-color: #181b1b;
+    margin: 5px;
     color: #747c44;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fechas {
-    font-size: 1.5rem;
+.fechas { /*Contenedor contenido fechas*/
+    font-size: 2.3rem;
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
-    height:0 auto;
-    margin-top: 10px;
+    height:15rem;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    animation: mymove 3s infinite; 
+   
+   
+}
+
+@keyframes mymove {
+    from {background-color:rgb(26, 24, 24) ;}
+    to {background-color:rgb(27, 34, 33);}
+ }
+
+.fechas li{
+    
+    list-style-type: none;
     color: #747c44;
+    background-color: rgb(23, 29, 29);
+    
+}
+
+
+.tracks{ /*Contenedor div de tracks*/
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 55%;
+    background-color: #181b1b;
+    font-size: 1.6rem;
+}
+
+.tracks a { /*Letras Tracks*/
+    color: #505a15;
+    
+}
+#musica{
+    height: 5px;
+    
+}
+.music { /*Contenedor (caja) audios*/
+    display: flex;
+    margin-top: 5px;
+    width: 320px;
+    background: #f1f3f4;
+    border: 1px solid black;
+    border-radius: 13px;
+} 
+.music .music-vox{ /*contenedor especifico de audios*/
+    display: flex;
+    background-position: left;
+    width: 100%;
+    background-color: white ;
+    border-radius: 13px;
+    
+    
+}
+.music .music-vox img { /*Contenedor Imágenes de audios*/
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+    
+    
+}    
+
+.music  p{ /*contenedor títulos audio*/
+    font-family:'Times New Roman', Times, serif ;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #505a15;
+    background-color: #f1f3f4;
+    
+    
+}
+
+.music audio {
+    
+    margin-top: 12px;
+    width:100%;
+    height: 30px;
+}    
 
 
+footer{ /* contenedor Logos Redes*/
+    
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-rows: 1fr 1fr;
+    background-color: #191d1d;
+}
+footer .footer-icons-container {/* sección Logos Redes*/
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color:#191d1d;
+}
+footer .footer-icons-container .icons {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    margin-right:50px;
+}
+footer .icons span {
+    color: rgb(233, 227, 227);
+}
+
+
+ .contacto {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+   
 }

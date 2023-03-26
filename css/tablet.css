@@ -1,6 +1,26 @@
-@media (max-width:900px) {
-     p {
-        justify-content:center ;
-        align-content: end;
-    }
+ 
+
+
+ 
+.fechas { /*Contenedor contenido fechas*/
+    font-size: 2.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
+    height:15rem;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    animation: mymove 3s infinite; 
+} 
+@keyframes mymove {
+    from {background-color:rgb(26, 24, 24) ;}
+    to {background-color:rgb(27, 34, 33);}
+ }
+
+.fechas li{
+    
+    list-style-type: none;
+    color: #747c44;
+    background-color: rgb(23, 29, 29);
+    
 }

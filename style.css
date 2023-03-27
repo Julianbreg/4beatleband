@@ -147,16 +147,20 @@ main .main-logo-box {
 
 
 .tracks{ /*Contenedor div de tracks*/
+    margin: 2px;
+    color: #747c44;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 55%;
+    height: 30px;
     background-color: #181b1b;
     font-size: 1.6rem;
 }
 
 .tracks a { /*Letras Tracks*/
-    color: #505a15;
+    color: #747c44;
+    font-size: 2rem;
+    
     
 }
 #musica{
@@ -209,43 +213,129 @@ main .main-logo-box {
     width:100%;
     height: 30px;
 }    
+.box-logo{ /*contenedor logo*/
+    margin:15px;
+    display: flex;
+    justify-content: center;
+    background-color: #121616;
+    
+}
 
+.logo{ /*contenedor imagen logo*/
+    width: 70px;
+    height: 70px;
+ 
+}
+.premios {
+width: 100%;
+height: max-content;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+background-color: #1b1d1d;
+
+}
+
+.premios-p { /*contenedor premiada la mejor banda*/
+    width: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #f8f8f4;
+    background-color: #1b1d18;
+    border: 2px solid #5e6130;
+    border-radius: 5px;
+   
+}
+.section-integrantes{/*contenedor premios cavern*/
+    
+    display: grid;
+    grid-template-columns: max-content;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #5e6130;
+    border-radius: 5px;
+    background-color: #1b1d18;
+}
+
+.premios .integrantes {
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: #e6e7d6;
+    font-size: 1.6rem;
+    list-style-type: none;
+    
+
+}
 
 footer{ /* contenedor Logos Redes*/
     
     margin-top: 30px;
     width: 100%;
-    height: 50px;
-    display: grid;
+    height: 60px;
     justify-content: flex-end;
     grid-template-rows: 1fr 1fr;
-    background-color: #191d1d;
+    background-color: #0c0c0c;
+   
 }
 footer .footer-icons-container {/* sección Logos Redes*/
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: grid;
     background-color:#191d1d;
+    
 }
 footer .footer-icons-container .icons {
-    width: 250px;
+    width: 100%;
     height: auto;
     display: flex;
-    justify-items: flex-end;
-    align-items: center;
     justify-content: center;
-    justify-self: end;
-    margin-right:50px;
-}
-footer .icons span {
-    color: rgb(233, 227, 227);
+    align-items: center;
+   
+    
+    
 }
 
+.whatsapp{
+    
+    width: 90px;
+    height: 30px;
+    align-content: start;
+    margin-left: 15px;
+    border: 1px solid black;
+    margin-top: 2px;
+   
+    
+}
+.clic{
+    width: 50%;
+    font-size: 1rem;
+    height: 30px;
+    color: rgb(148, 14, 14);
+    position: relative;
+    display: flex;
+    left: -155px;
+    align-items: center;
+    color: white;
+    
+    
+}
 
- .contacto {
+.contacto {
+    
+    display: flex;
+    justify-content: end;
     font-size: 1.2rem;
-    margin-left: 10px;
+    margin-top: 1px;
+    margin-left: 0px;
     font-family: 'Times New Roman', Times, serif;
     color: antiquewhite;
+    background-color:#234242;
    
+}
+.contacto p{
+    align-self: center;
+    margin-right: 10px;
+    
 }

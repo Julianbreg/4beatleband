@@ -23,8 +23,7 @@ main{
     
     width: 100%;
     height: 100%;
-    color: #151616;
-    
+        
 }
 
 main .main-logo-box {
@@ -34,6 +33,7 @@ main .main-logo-box {
     justify-content:center;
     background-color: #151616;
 }
+
 
 .main-logo-box  /*arreglo las cajas circulares*/
 .box1,
@@ -50,6 +50,7 @@ main .main-logo-box {
     max-width: 67px;
     max-height: 65px;
     border-radius: 65px;
+    align-self:center;
     text-align: center;
     background-image: url('./fotos/beatles.jpg');
     background-size: cover;
@@ -84,7 +85,7 @@ main .main-logo-box {
     background: #2f3131;
     box-shadow: 20px 20px 60px #141516, -20px -20px 60px #444646;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     overflow: auto;
     scroll-snap-type:x mandatory;
     padding: 5px;
@@ -110,21 +111,12 @@ main .main-logo-box {
 
 
 
-.calendario { /*Contenedor título Calendario*/
-    background-color: #181b1b;
-    margin: 5px;
-    color: #747c44;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .fechas { /*Contenedor contenido fechas*/
-    font-size: 2.3rem;
-    font-family: 'Times New Roman', Times, serif;
+   
+    
+    
     width: 100%;
-    height:15rem;
-    margin-top: 2px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     animation: mymove 3s infinite; 
@@ -137,23 +129,20 @@ main .main-logo-box {
     to {background-color:rgb(27, 34, 33);}
  }
 
-.fechas li{
-    
-    list-style-type: none;
-    color: #747c44;
-    background-color: rgb(23, 29, 29);
-    
-}
-
+ .fechas .fechas-img{
+    width: 100%;
+    height: 450px;
+    max-width: 460px;
+ }
 
 .tracks{ /*Contenedor div de tracks*/
-    margin: 2px;
+    margin-top:5px;
     color: #747c44;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 30px;
-    background-color: #181b1b;
+    background-color: #222020;
     font-size: 1.6rem;
 }
 
@@ -170,10 +159,11 @@ main .main-logo-box {
 .music { /*Contenedor (caja) audios*/
     display: flex;
     margin-top: 5px;
+    margin-bottom: 5px;
     width: 320px;
-    background: #f1f3f4;
     border: 1px solid black;
     border-radius: 13px;
+    background-color:#f1f3f4;
 } 
 .music .music-vox{ /*contenedor especifico de audios*/
     display: flex;
@@ -188,7 +178,7 @@ main .main-logo-box {
     position: relative;
     width: 50%;
     height: 100%;
-    
+       
     
     
 }    
@@ -213,11 +203,47 @@ main .main-logo-box {
     width:100%;
     height: 30px;
 }    
+
+.videos { /*Contenedor de Videos skroll*/
+    margin-top: 60px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 80%;
+    background: #2f3131;
+    box-shadow: 20px 20px 60px #141516, -20px -20px 60px #444646;
+    display: flex;
+    align-items: flex-end;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    padding: 5px;
+    scroll-padding:10px;
+    gap: 8px;
+}
+
+
+.videos .video { 
+
+    flex: 0 0 60%;
+    display: contents;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.videos .video iframe{
+
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+
 .box-logo{ /*contenedor logo*/
-    margin:15px;
+    width: 100%;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    background-color: #121616;
+    background-color: #151616;
     
 }
 
@@ -225,48 +251,6 @@ main .main-logo-box {
     width: 70px;
     height: 70px;
  
-}
-.premios {
-width: 100%;
-height: max-content;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 10px;
-background-color: #1b1d1d;
-
-}
-
-.premios-p { /*contenedor premiada la mejor banda*/
-    width: 40%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    margin-top: 10px;
-    color: #f8f8f4;
-    background-color: #1b1d18;
-    border: 2px solid #5e6130;
-    border-radius: 5px;
-   
-}
-.section-integrantes{/*contenedor premios cavern*/
-    
-    display: grid;
-    grid-template-columns: max-content;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid #5e6130;
-    border-radius: 5px;
-    background-color: #1b1d18;
-}
-
-.premios .integrantes {
-    
-    font-family: 'Times New Roman', Times, serif;
-    color: #e6e7d6;
-    font-size: 1.6rem;
-    list-style-type: none;
-    
-
 }
 
 footer{ /* contenedor Logos Redes*/
@@ -284,6 +268,7 @@ footer .footer-icons-container {/* sección Logos Redes*/
     height: 40px;
     display: grid;
     background-color:#191d1d;
+    margin-bottom: 1px;
     
 }
 footer .footer-icons-container .icons {
@@ -291,51 +276,44 @@ footer .footer-icons-container .icons {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: flex-end;
+    background-color: #a1a1a3;
     
-    
+      
+        
+}
+.instagram {
+    width: 100%;
+    height: 25px;
 }
 
-.whatsapp{
-    
-    width: 90px;
-    height: 30px;
-    align-content: start;
-    margin-left: 15px;
-    border: 1px solid black;
-    margin-top: 2px;
-   
-    
-}
-.clic{
-    width: 50%;
-    font-size: 1rem;
-    height: 30px;
-    color: rgb(148, 14, 14);
-    position: relative;
-    display: flex;
-    left: -155px;
-    align-items: center;
-    color: white;
-    
-    
-}
+
+
 
 .contacto {
-    
+    height: 45px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     font-size: 1.2rem;
-    margin-top: 1px;
-    margin-left: 0px;
     font-family: 'Times New Roman', Times, serif;
     color: antiquewhite;
-    background-color:#234242;
+    background-color:#060e0e;
+
    
 }
+
+.whatsapp {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border: 1px solid gray;
+}
+
 .contacto p{
     align-self: center;
     margin-right: 10px;
+    margin-left: 15px;
+    
     
 }

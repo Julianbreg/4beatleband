@@ -1,0 +1,89 @@
+ 
+ 
+.container { /*Contenedor de fotos skroll*/
+    
+    height: 80%;
+    margin: 10px;
+    background: #2f3131;
+    box-shadow: 20px 20px 60px #141516, -20px -20px 60px #444646;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    padding: 5px;
+    scroll-padding:10px;
+    gap: 8px;
+}
+
+.fechas .fechas-img{
+    
+    width: 100%;
+    height: 540px;
+    max-width: 500px;
+    max-height: 550px;
+ 
+ }      
+ .container .item img{
+
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    
+}
+.tracks{ /*Contenedor div de tracks*/
+    margin-top: 15px;
+    color: #747c44;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3px;
+    background-color: #222020;
+    font-size: 1.6rem;
+}
+
+.music { /*Contenedor (caja) audios*/
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    width: 80%;
+    height: 70px;
+    border: 0.8px solid black;
+    border-radius: 13px;
+    background-color:#f1f3f4;
+} 
+.music .music-vox{ /*contenedor especifico de audios*/
+    display: flex;
+    width: 30%;
+    background-color: white ;
+       
+    
+}
+.music-vox .songs-foto { /*Contenedor Imágenes de audios*/
+    
+    width: 100px;
+    height: 400px;
+    max-width: 130px;
+
+    
+}    
+
+.music  p{ /*contenedor títulos audio*/
+    font-family:'Times New Roman', Times, serif ;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #505a15;
+    background-color: #f1f3f4;
+    
+    
+}
+
+.music audio {
+    
+    margin-top: 12px;
+    width:100%;
+    height: 30px;
+ }

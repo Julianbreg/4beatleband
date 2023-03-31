@@ -1,5 +1,11 @@
  
- 
+ .encuesta{
+    margin-top: 20px;
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+ }
+
 .container { /*Contenedor de fotos skroll*/
     
     height: 80%;

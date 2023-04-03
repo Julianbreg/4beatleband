@@ -16,7 +16,7 @@
 
 .container { /*Contenedor de fotos skroll*/
     
-    height: 80%;
+    height: 400px;
     margin: 10px;
     background: #2f3131;
     box-shadow: 20px 20px 60px #141516, -20px -20px 60px #444646;
@@ -28,10 +28,14 @@
     scroll-padding:10px;
     gap: 8px;
 }
+.container .item img:hover{
+    transform: scale(1.4);
+}
+
 .fechas { /*Contenedor contenido fechas*/
-     
+    background-color: rgb(38, 39, 41);
     width: 100%;
-    height: 580px;
+    height: 600px;
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
@@ -40,9 +44,10 @@
 .fechas .fechas-img{
     
     width: 100%;
-    height: 540px;
+    height: 580px;
     max-width: 500px;
-    max-height: 550px;
+    max-height: 580px;
+    box-shadow: 20px 20px 10px 10px black;
  
  }      
  .container .item img{
@@ -67,7 +72,7 @@
     display: flex;
     margin-bottom: 5px;
     margin-left: 100px;
-    width: 80%;
+    width: 55%;
     height: 70px;
     border: 0.8px solid black;
     border-radius: 13px;

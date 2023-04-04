@@ -80,16 +80,17 @@
 } 
 .music .music-vox{ /*contenedor especifico de audios*/
     display: flex;
-    width: 30%;
+    width: 65%;
     background-color: white ;
        
     
 }
-.music-vox .songs-foto { /*Contenedor Imágenes de audios*/
+.music-vox img { /*Contenedor Imágenes de audios*/
     
-    width: 100px;
+    width: 300px;
     height: 400px;
-    max-width: 130px;
+    min-width: 100px;
+    max-width: 300px;
 
     
 }    
@@ -114,3 +115,23 @@
     width:100%;
     height: 30px;
  }
+ .mail {
+    
+    text-decoration: none;
+    color:rgb(7, 7, 7);
+    font-size: 1.5rem;
+    
+}
+.videos { /*Contenedor de Videos skroll*/
+width: 100%;
+
+}
+.box-logo{ /*contenedor logo*/
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #151616;
+    
+}

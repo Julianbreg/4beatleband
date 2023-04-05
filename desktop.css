@@ -1,10 +1,38 @@
  
+ 
+ main .main-logo-box {
+    margin: 40px;
+    width: 100%;
+    height: 170px;
+      
+}
+
+ .main-logo-box  /*arreglo las cajas circulares*/
+ .box1,
+ .box2,
+ .box3,
+ .box4  { 
+    
+    min-width: 150px;
+    min-height: 145px;
+    max-width: 165px;
+    max-height: 165px;
+     
+ }
+
+.box1 a,
+.box2 a,
+.box3 a,
+.box4 a{
+  
+    font-size: 2.5rem;
+      
+}
  .survey{
     height: 350px;
     display: flexbox;
-    
-
- } 
+ 
+} 
  .encuesta{
     margin-left: 40px;
     justify-content: center;
@@ -82,8 +110,7 @@
     display: flex;
     width: 65%;
     background-color: white ;
-       
-    
+ 
 }
 .music-vox img { /*Contenedor Imágenes de audios*/
     
@@ -91,7 +118,6 @@
     height: 400px;
     min-width: 100px;
     max-width: 300px;
-
     
 }    
 
@@ -115,23 +141,28 @@
     width:100%;
     height: 30px;
  }
- .mail {
-    
-    text-decoration: none;
-    color:rgb(7, 7, 7);
-    font-size: 1.5rem;
-    
-}
+
 .videos { /*Contenedor de Videos skroll*/
 width: 100%;
 
 }
 .box-logo{ /*contenedor logo*/
+    margin-top: 50px;
     width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: #151616;
+    height: 160px;
+  
+
     
+}
+.mail{
+    color:rgb(87, 6, 6);
+    font-size: 1.7rem;
+}
+
+.contacto p{
+    
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 15px;
+      
 }

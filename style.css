@@ -79,6 +79,7 @@ main .main-logo-box {
    
 }
 .encuesta{
+   
    margin: 10px;
    width: 95%;
    height: 380px;
@@ -304,7 +305,7 @@ footer .footer-icons-container .icons {
 
 .contacto { /*Caja whatsapp y email*/
     
-    height: 70px;
+    height: 95px;
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;

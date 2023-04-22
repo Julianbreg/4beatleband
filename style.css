@@ -88,25 +88,51 @@ main .main-logo-box {
   }
 .click{
    
-   
-   text-align: center;
+    text-align: center;
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 60px;
+    margin-top: 30px;
+    background-color: #111313;
 }
+
 a.vela{
-    animation: color 3s infinite linear;
-    font-weight: bold;
-    width: 200px;
-    height: 40px;
+
+    animation: color 2s infinite linear;
+    font-weight:bold ;
+    width: 210px;
+    height: 50px;
     cursor: pointer;
-    text-align: center;
+    border-radius: 10px;
     font-size:2.4rem;
     color: rgb(171, 190, 91);
 
+}
+
+p.interactive{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1d1f1f;
+    font-size: 2rem;
+    color: rgb(101, 110, 62);
+    display: flex;
+    justify-content: center;
+}
+
+a.peace{
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    color: beige;
+}
+.interact{
+    border: solid rgb(34, 33, 33);
+    border-radius: 20%;
+    width: 310px;
 }
 
 .container { /*Contenedor de fotos skroll*/

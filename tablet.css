@@ -30,11 +30,16 @@ main .main-logo-box {
     
 }
 .survey{
+    height: 450px;
     display: flex;
     justify-content: center;
 
  } 
  
+ .strawpoll-embed {
+    height: 280px;
+    width: 100%;
+ }
  .encuesta{
     margin-left: 10px;
     margin-top: 10px;

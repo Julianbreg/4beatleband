@@ -84,7 +84,7 @@ main .main-logo-box {
     40%  { background: #2a2b2a; }
     60%  { background: #313131; }
     80%  { background: #151615; }
-    100% { background: #151818; }
+    100% { background: #212222; }
   }
 .click{
    
@@ -100,14 +100,16 @@ main .main-logo-box {
 
 a.vela{
 
+    text-decoration: wavy;
     animation: color 2s infinite linear;
     font-weight:bold ;
     width: 220px;
-    height: 60px;
+    height: 70px;
     cursor: pointer;
+    box-shadow: 1px 1px 8px #2c2e30, -1px -1px 8px #444646;
     border-radius: 10px;
-    font-size:2.4rem;
-    color: rgb(171, 190, 91);
+    font-size:2.7rem;
+    color: rgb(168, 155, 78);
 
 }
 
@@ -222,6 +224,7 @@ justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 320px;
+    height: 55px;
     border: 0.8px solid black;
     border-radius: 13px;
     background-color:#f1f3f4;

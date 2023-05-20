@@ -100,7 +100,7 @@ main .main-logo-box {
 
 a.vela{
 
-    text-decoration: wavy;
+    text-decoration: none;
     animation: color 2s infinite linear;
     font-weight:bold ;
     width: 220px;
